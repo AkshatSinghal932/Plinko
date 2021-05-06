@@ -66,11 +66,11 @@ function draw() {
   }
 
   //display the paricles 
-  if(frameCount%60===0){
+  if(frameCount%90===0){
   particles.push(new Particle(random(width/2-30,width/2+30),10,10));
-  score=score++;
+  score++;
   }
-  for (var l=0; k<particles.length;l++){
+  for (var l=0; l<particles.length;l++){
     particles[l].display();
   }
 
